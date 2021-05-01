@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="form__group">
-	<p style="font-size: 30px">Result of <strong>${functionType}(${functionValue}):</strong> ${functionResult}</p>
+	<p style="font-size: 30px" id="result">Result of <strong>${functionType}(${functionValue}):</strong> ${functionResult}</p>
 	<div>
 		<a href="${pageContext.request.contextPath}/" style="color: white; text-decoration: underline; font-size: 40px">Go back</a>
 	</div>

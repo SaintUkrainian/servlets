@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.Objects;
+
 @Controller
 public class HomeController {
 
@@ -18,6 +20,9 @@ public class HomeController {
 
   @PostMapping("/calculate")
   public String calculate(@ModelAttribute Function function, Model model) {
+    if(Objects.isNull(function.getType()) || Objects.isNull(function.getValue())) {
+      return "redirect:/";
+    }
     Double result = "Tan".equals(function.getType()) ?
         Math.tan(function.getValue()) :
         Math.sin(function.getValue());

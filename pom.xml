@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.github.saintukranian</groupId>
 	<artifactId>servlets</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>servlets</name>
 	<description>Servlets Project</description>
 	<properties>
@@ -50,6 +50,22 @@
 		<dependency>
 			<artifactId>lombok</artifactId>
 			<groupId>org.projectlombok</groupId>
+		</dependency>
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.13.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testcontainers</groupId>
+			<artifactId>testcontainers</artifactId>
+			<version>1.15.3</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
